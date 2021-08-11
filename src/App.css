@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+input[type=checkbox] {
+  display: none;
+}
+
+/* .container img {
+  margin: 100px;
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+} */
+
+input[type=checkbox]:checked ~ label > img {
+  transform: scale(2);
+  cursor: zoom-out;
+}
+
+.carousel-item-image{
+  height: 100vh;
+  width: 100vmax;
+  display: grid;
+  place-items: center;
+}
+.transform-component-module_content__2jYgh{
+  width: 100% !important;
+  margin: 0 150px !important;
+}
+
+@media (max-width: 768px) {
+  .transform-component-module_content__2jYgh{
+    width: 100% !important;
+    margin: 0 0px !important;
+  }
+}
